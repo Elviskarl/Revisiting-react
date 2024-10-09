@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.password__generator,
+.password__params{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.password__params{
+  gap: 5px;
+}
+.password__generator label {
+  margin-right: 7px;
+}
+.password__generator button{
+  background-color: cornflowerblue;
+  border: 1px none slategrey;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
