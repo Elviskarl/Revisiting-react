@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.currency__converter {
+  display: flex;
+  gap: 1em;
+}
+.submit--button {
+  padding: 1em;
+  margin: 1em 0.2em;
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  color: antiquewhite;
+  background-color: blue;
+}
+.submit--button:hover {
+  background-color: antiquewhite;
+  color: blue;
+  transition: 0.8s;
+}
