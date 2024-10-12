@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form--submission {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0.8em;
+}
+
+aside {
+  padding: 0.8em;
+}
