@@ -6,7 +6,7 @@ import { Form, TodoItems } from "./components";
 function App() {
   const [todo, setTodo] = useState<Todo[]>([]);
   function addTodo(todo: Todo) {
-    const newTodo: Todo = { id: Date.now(), ...todo };
+    const newTodo: Todo = { ...todo, id: Date.now() };
     setTodo((prevVal) => [{ ...newTodo }, ...prevVal]);
   }
   function updateTodo(updatedTodo: Todo) {
@@ -35,7 +35,9 @@ function App() {
     }
   }, []);
   useEffect(() => {
-    localStorage.setItem("todoItems", JSON.stringify(todo));
+    if (TodoItems.length > 0) {
+      localStorage.setItem("todoItems", JSON.stringify(todo));
+    }
   }, [todo]);
   return (
     <TodoContextProvider
