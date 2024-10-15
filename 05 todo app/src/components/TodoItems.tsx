@@ -10,7 +10,7 @@ export default function TodoItems({ todo }: TodoItemsProps) {
   const { deleteTodo, updateTodo, showComplete } = useTodo();
 
   function editTodo() {
-    updateTodo({ todo: todoMessage, ...todo });
+    updateTodo({ ...todo, todo: todoMessage });
     setIsEditable(false);
   }
 
